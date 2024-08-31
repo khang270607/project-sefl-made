@@ -1,0 +1,52 @@
+.footer {
+    padding-top: 140px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        margin-bottom: 40px;
+    }
+
+    &__heading {
+        color: #020000;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    &__link {
+        color: #676a6c;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 3.17;
+    }
+
+    &__desc-lagre {
+        width: 200px;
+        color: #676a6c;
+        font-size: 1.4rem;
+        line-height: 1.86;
+    }
+
+    &__mail {
+        margin-top: 16px;
+        color: #31c3e0;
+        font-weight: 700;
+    }
+
+    &__nav {
+        margin-top: 45px;
+    }
+
+    &__toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 170px;
+    }
+
+    &__icon {
+        width: 46px;
+        height: 46px;
+    }
+}

@@ -291,9 +291,8 @@ button:hover {
 .separate {
   display: inline-block;
   width: 100%;
-  height: 2px;
-  background: #ccc;
-  margin: 10px 0;
+  height: 1px;
+  background: rgba(210, 208, 192, 0.21);
 }
 
 .row > *, .container-fluid, .container {
@@ -1470,6 +1469,51 @@ button:hover {
   .nav__checked:checked ~ .nav__menu-overlay {
     opacity: 1;
   }
+}
+
+.footer {
+  padding-top: 140px;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  margin-bottom: 40px;
+}
+.footer__heading {
+  color: #020000;
+  font-weight: 600;
+  line-height: 1;
+}
+.footer__link {
+  color: #676a6c;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 3.17;
+}
+.footer__desc-lagre {
+  width: 200px;
+  color: #676a6c;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.footer__mail {
+  margin-top: 16px;
+  color: #31c3e0;
+  font-weight: 700;
+}
+.footer__nav {
+  margin-top: 45px;
+}
+.footer__toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 170px;
+}
+.footer__icon {
+  width: 46px;
+  height: 46px;
 }
 
 /*# sourceMappingURL=main.css.map */
