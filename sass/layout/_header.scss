@@ -1,0 +1,113 @@
+@use "../abstracts";
+.header {
+    padding-top: 32px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__menu {
+        display: flex;
+
+        &-item {
+            position: relative;
+
+            &::after {
+                content: "";
+                display: flex;
+                justify-content: flex-end;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 0;
+                height: 2px;
+                background-color: var(--color-icon);
+                transition: width 0.3s ease-in-out;
+            }
+
+            &:hover::after {
+                left: 0;
+                width: 100%;
+                justify-content: flex-start;
+            }
+        }
+
+        &-link {
+            display: inline-block;
+            text-align: center;
+            padding: 14px 17px;
+            color: #676a6c;
+            font-family: var(--font-popins);
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.14;
+            &:hover {
+                text-shadow: 1px 0 0 #2d3134;
+            }
+
+            &:hover + .nav__menu-item::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &__btn {
+        background: #31c3e0;
+    }
+
+    @include abstracts.screen(lg) {
+        &__menu {
+            &--mobile {
+                padding-top: 20px;
+                position: fixed;
+                inset: 0 40% 0 0;
+                transform: translateX(-100%);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                background: #fff;
+                z-index: 999;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+                transition: 0.3s;
+            }
+
+            &-overlay {
+                position: fixed;
+                right: 0;
+                top: 0;
+                transform: translateX(-100%);
+                inset: 0;
+                background: rgba($color: #000000, $alpha: 0.3);
+                z-index: 998;
+                opacity: 0;
+                transition: opacity 0.3s;
+
+                & label {
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &-item--mobile-separate {
+                margin-top: 5px;
+                border-top: 1px solid #ccc;
+            }
+            &-link--mobile {
+                display: inline-block;
+                align-content: center;
+                height: 50px;
+                padding-left: 20px;
+                width: 100%;
+            }
+        }
+        &__checked:checked + &__menu--mobile,
+        &__checked:checked ~ &__menu-overlay {
+            transform: translateX(0);
+        }
+        &__checked:checked ~ &__menu-overlay {
+            opacity: 1;
+        }
+    }
+}
