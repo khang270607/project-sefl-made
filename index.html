@@ -16,16 +16,283 @@
     </head>
     <body>
         <!-- header -->
-        <header class="header" id="header"></header>
-        <script>
-            load("#header", "./templates/header.html");
-        </script>
-        <!-- main -->
+        <header class="header header__home">
+            <!-- menu mobile -->
+            <input type="checkbox" name="" id="show-menu" class="nav__checked" hidden />
+            <ul class="nav__menu--mobile d-none d-xl-block">
+                <li class="nav__menu-item--mobile">
+                    <a href="#!" class="nav__menu-link--mobile">Home</a>
+                </li>
+                <li class="nav__menu-item--mobile">
+                    <a href="#!" class="nav__menu-link--mobile">About</a>
+                </li>
+                <li class="nav__menu-item--mobile">
+                    <a href="#!" class="nav__menu-link--mobile"> Destinations </a>
+                </li>
+                <li class="nav__menu-item--mobile">
+                    <a href="#!" class="nav__menu-link--mobile">Blog</a>
+                </li>
+                <li class="nav__menu-item--mobile">
+                    <a href="#!" class="nav__menu-link--mobile">Pages</a>
+                </li>
+                <li class="nav__menu-item--mobile nav__menu-item--mobile-separate">
+                    <a href="#!" class="nav__menu-link--mobile">Contact us</a>
+                </li>
+            </ul>
+            <div class="nav__menu-overlay">
+                <label for="show-menu"></label>
+            </div>
+            <div class="container">
+                <!-- navbar -->
+                <nav class="nav">
+                    <div class="logo">
+                        <div class="logo__img">HK</div>
+                        <a href="#!" class="logo__title">
+                            Safe Tour
+                            <span class="logo__dost">.</span>
+                        </a>
+                    </div>
 
+                    <ul class="nav__menu d-md-none">
+                        <li class="nav__menu-item">
+                            <a href="#!" class="nav__menu-link">Home</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="#!" class="nav__menu-link">About</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="#!" class="nav__menu-link"> Destinations </a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="#!" class="nav__menu-link">Blog</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a href="#!" class="nav__menu-link">Pages</a>
+                        </li>
+                    </ul>
+                    <div class="nav__toggle">
+                        <button class="btn nav__btn d-xl-none">Contact us</button>
+                        <label for="show-menu">
+                            <img
+                                src="./assets/icon/show-menu.svg"
+                                alt=""
+                                class="nav__show-menu d-none d-xl-block"
+                            />
+                        </label>
+                    </div>
+                </nav>
+                <!-- hero -->
+                <div class="hero">
+                    <div class="row hero__row">
+                        <div class="col">
+                            <div class="hero__content">
+                                <h1 class="hero__heading">
+                                    Let's Make Your Best Trip Ever
+                                </h1>
+                                <p class="hero__desc">
+                                    Plan and book your perfect trip with expert advice,
+                                    travel tips, destination information and inspiration
+                                    from us.
+                                </p>
+                                <div class="hero__group-btn">
+                                    <button class="btn hero__btn">Discover Now</button>
+                                    <figure class="hero__icon-play">
+                                        <img src="./assets/icon/play.svg" alt="play" />
+                                    </figure>
+                                    <a href="#!" class="hero__btn-link">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="hero__right">
+                                <figure class="hero__img">
+                                    <img
+                                        src="./assets/img/home/girl.png"
+                                        alt=""
+                                        class="hero__person"
+                                    />
+
+                                    <div class="hero__card">
+                                        <figure class="hero__circle">
+                                            <h4 class="hero__card--time">39</h4>
+                                            <p class="hero__card--sub-desc">
+                                                Times traveled
+                                            </p>
+                                        </figure>
+                                        <h3 class="hero__card--number">224</h3>
+                                        <div class="hero__card--desc">
+                                            Total trip (month)
+                                        </div>
+                                    </div>
+                                </figure>
+                                <div class="hero__prosper d-xl-none d-lg-flex d-md-none">
+                                    <div class="hero__prosper--item">
+                                        <img
+                                            src="./assets/icon/home-header-icon-1.svg"
+                                            alt=""
+                                            class="hero__prosper--icon"
+                                        />
+                                        <div>
+                                            <h3 class="hero__prosper--num">12</h3>
+                                            <p class="hero__prosper--desc">
+                                                Years Experiences
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="hero__prosper--item">
+                                        <img
+                                            src="./assets/icon/home-header-icon-2.svg"
+                                            alt=""
+                                            class="hero__prosper--icon"
+                                        />
+                                        <div>
+                                            <h3 class="hero__prosper--num">29</h3>
+                                            <p class="hero__prosper--desc">
+                                                Awards Gained
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="hero__prosper--item">
+                                        <img
+                                            src="./assets/icon/home-header-icon-3.svg"
+                                            alt=""
+                                            class="hero__prosper--icon"
+                                        />
+                                        <div>
+                                            <h3 class="hero__prosper--num">725+</h3>
+                                            <p class="hero__prosper--desc">
+                                                Property Build
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- main -->
         <!-- footer -->
-        <footer class="footer" id="footer"></footer>
-        <script>
-            load("#footer", "./templates/footer.html");
-        </script>
+        <footer class="footer">
+            <div class="container">
+                <div class="row row-cols-4 row-cols-lg-2">
+                    <div class="col">
+                        <div class="footer__item">
+                            <h3 class="footer__heading">Resources</h3>
+                            <ul class="footer__list">
+                                <li class="footer__desc">
+                                    <a class="footer__link">Download</a>
+                                </li>
+                                <li class="footer__desc">
+                                    <a class="footer__link">Help Center</a>
+                                </li>
+                                <li class="footer__desc">
+                                    <a class="footer__link">Guide Book</a>
+                                </li>
+                                <li class="footer__desc">
+                                    <a class="footer__link">App Directory</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer__item">
+                            <h3 class="footer__heading">Travellers</h3>
+                            <ul class="footer__list">
+                                <li class="footer__desc">
+                                    <a class="footer__link">Why Travellers</a>
+                                </li>
+                                <li class="footer__desc">
+                                    <a class="footer__link">Enterprice</a>
+                                </li>
+                                <li class="footer__desc">
+                                    <a class="footer__link">Customer Stories</a>
+                                </li>
+                                <li class="footer__desc">
+                                    <a class="footer__link">Instagram post</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer__item">
+                            <h3 class="footer__heading">Company</h3>
+                            <ul class="footer__list">
+                                <li class="footer__desc">
+                                    <a class="footer__link">Travelling</a>
+                                </li>
+                                <li class="footer__desc">
+                                    <a class="footer__link">About Locato</a>
+                                </li>
+                                <li class="footer__desc">
+                                    <a class="footer__link">Success</a>
+                                </li>
+                                <li class="footer__desc">
+                                    <a class="footer__link">Information</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer__item">
+                            <h3 class="footer__heading">Get in Touch</h3>
+                            <p class="footer__desc-lagre">
+                                Feel free to get in touch with us vai email
+                            </p>
+                            <a href="#!" class="footer__mail">khang@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="separate"></div>
+                <div class="nav footer__nav">
+                    <div class="logo">
+                        <div class="logo__img">HK</div>
+                        <a href="#!" class="logo__title">
+                            Safe Tour
+                            <span class="logo__dost">.</span>
+                        </a>
+                    </div>
+
+                    <ul class="nav__menu d-md-none">
+                        <li class="footer__menu-item">
+                            <a href="#!" class="nav__menu-link">Home</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="nav__menu-link">About</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="nav__menu-link"> Destinations </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="nav__menu-link">Blog</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#!" class="nav__menu-link">Pages</a>
+                        </li>
+                    </ul>
+                    <div class="nav__toggle footer__toggle">
+                        <a href="#!"
+                            ><img
+                                src="./assets/img/footer/logo-1.png"
+                                alt=""
+                                class="footer__icon"
+                        /></a>
+                        <a href="#!"
+                            ><img
+                                src="./assets/img/footer/logo-2.png"
+                                alt=""
+                                class="footer__icon"
+                        /></a>
+                        <a href="#!"
+                            ><img
+                                src="./assets/img/footer/logo-3.png"
+                                alt=""
+                                class="footer__icon"
+                        /></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

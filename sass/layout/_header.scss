@@ -1,6 +1,17 @@
 @use "../abstracts";
 .header {
     padding-top: 32px;
+    height: 100vh;
+
+    &__home {
+        background: #fff;
+    }
+
+    &__about {
+        background-image: url("../../assets/img/about/header.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 .nav {
     display: flex;
@@ -56,7 +67,7 @@
         background: #31c3e0;
     }
 
-    @include abstracts.screen(lg) {
+    @include abstracts.screen(xl) {
         &__menu {
             &--mobile {
                 padding-top: 20px;
