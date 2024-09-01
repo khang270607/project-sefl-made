@@ -93,7 +93,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 93px;
+        height: 91px;
         z-index: 1;
         &::before {
             content: url("../../assets/icon/circle.svg");
@@ -213,6 +213,94 @@
 
         &__img {
             margin-left: 45px;
+        }
+    }
+
+    @include abstracts.screen(sm) {
+        &__heading {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        &__desc {
+            margin-top: 14px;
+            font-size: 1.4rem;
+            line-height: 1.43;
+        }
+
+        &__group-btn {
+            margin-top: 40px;
+            gap: 20px;
+        }
+
+        &__btn {
+            width: 161px;
+            height: 58px;
+            font-size: 1.6rem;
+            line-height: 1.38;
+            padding: 18px;
+        }
+
+        &__btn-link {
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.43;
+        }
+
+        &__img {
+            &::before {
+                content: url("../../assets/img/shapes-small.png");
+            }
+
+            &::after {
+                left: -41px;
+                width: calc(100% + 41px);
+            }
+        }
+
+        &__person {
+            width: 259px;
+            height: 347px;
+        }
+
+        &__icon-play,
+        &__btn-link {
+            margin-left: 0;
+        }
+
+        &__card {
+            padding: 14px 24px 17px;
+            border-radius: 11px;
+            background: #fff;
+            box-shadow: 0px 34px 68px -17px rgba(0, 0, 0, 0.1);
+            left: -61px;
+        }
+
+        &__circle {
+            height: 62px;
+            &::before {
+                content: url("../../assets/icon/circle-small.svg");
+            }
+        }
+
+        &__card--time {
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 1.23;
+        }
+
+        &__card--sub-desc {
+            font-size: 0.4rem;
+        }
+
+        &__card--number {
+            margin-top: 12px;
+            font-size: 1.6rem;
+        }
+
+        &__card--desc {
+            font-size: 0.8rem;
         }
     }
 }

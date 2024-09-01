@@ -1,3 +1,4 @@
+@use "../abstracts";
 .footer {
     padding: 140px 0 40px;
     margin-top: 200px;
@@ -48,5 +49,11 @@
     &__icon {
         width: 46px;
         height: 46px;
+    }
+
+    @include abstracts.screen(sm) {
+        &__desc-lagre {
+            width: 100%;
+        }
     }
 }
