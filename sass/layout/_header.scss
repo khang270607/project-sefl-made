@@ -12,6 +12,12 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    @include abstracts.screen(lg) {
+        & {
+            height: auto;
+        }
+    }
 }
 .nav {
     display: flex;
@@ -79,7 +85,6 @@
                 justify-content: flex-start;
                 background: #fff;
                 z-index: 999;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
                 transition: 0.3s;
             }
 
@@ -115,6 +120,7 @@
         }
         &__checked:checked + &__menu--mobile,
         &__checked:checked ~ &__menu-overlay {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
             transform: translateX(0);
         }
         &__checked:checked ~ &__menu-overlay {

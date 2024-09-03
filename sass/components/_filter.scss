@@ -4,9 +4,10 @@
     padding: 25px 40px;
     width: 761px;
 
-    // display: flex;
-    // align-items: center;
-    // gap: 75px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 75px;
 
     border-radius: 8px;
     background: #fff;
@@ -23,6 +24,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        white-space: nowrap;
     }
 
     &__desc {
@@ -53,7 +55,17 @@
 
     @include abstracts.screen(lg) {
         & {
+            margin-top: 50px;
+            padding: 20px;
+            grid-template-columns: 1fr 1fr;
             width: 100%;
+        }
+    }
+
+    @include abstracts.screen(sm) {
+        & {
+            grid-template-columns: 1fr;
+            gap: 40px;
         }
     }
 }

@@ -55,5 +55,15 @@
         &__desc-lagre {
             width: 100%;
         }
+
+        &__toggle {
+            gap: 30px;
+        }
+
+        &__nav {
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 }

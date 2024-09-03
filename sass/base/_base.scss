@@ -56,9 +56,25 @@ strong {
     font-weight: 600;
 }
 
+a,
+button {
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
 :root {
     --font-popins: "Poppins", sans-serif;
     --color-icon: #ff7b29;
+    --srcollbar-bg: rgba(0, 0, 0, 0);
+    --menu-scrollbar: rgba(22, 24, 35, 0.2);
+}
+
+.container {
+    // width: 1199px;
 }
 
 .separate {
@@ -66,4 +82,71 @@ strong {
     width: 100%;
     height: 1px;
     background: rgba(210, 208, 192, 0.21);
+}
+
+h2 {
+    color: #2d3134;
+    font-family: var(--font-popins);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.h4 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.34;
+}
+
+.b-1 {
+    font-family: var(--font-popins);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.b-2 {
+    color: #2d3134;
+    font-family: var(--font-popins);
+    font-weight: 600;
+    line-height: 1.63;
+}
+
+.p-1 {
+    color: #676a6c;
+    line-height: 1.63;
+}
+
+.p-2 {
+    color: #676a6c;
+    font-size: 1.4rem;
+    line-height: 1.43;
+}
+
+.p-3 {
+    color: #8a8a8a;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar {
+    border-radius: 0;
+    width: 2px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    // background: transparent;
+    background-color: var(--menu-scrollbar);
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    // background: transparent;
+    background-color: var(--srcollbar-bg);
 }
