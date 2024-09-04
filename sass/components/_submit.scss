@@ -1,0 +1,87 @@
+@use "../abstracts";
+.submit {
+    margin-top: 184px;
+
+    &__block {
+        position: relative;
+        padding: 70px 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        border-radius: 20px;
+        background: #e8c400;
+
+        &::before {
+            content: url("../../assets/icon/triangular.svg");
+            position: absolute;
+            top: -30px;
+            left: 79px;
+        }
+
+        &::after {
+            content: url("../../assets/icon/half-circle.svg");
+            position: absolute;
+            right: 139px;
+            bottom: 106px;
+        }
+    }
+
+    &__title {
+        color: #fff;
+        text-align: center;
+    }
+
+    &__desc {
+        margin-top: 6px;
+        width: 425px;
+        color: rgba(255, 255, 255, 0.88);
+        text-align: center;
+    }
+
+    &__group {
+        margin-top: 41px;
+        position: relative;
+    }
+
+    &__input {
+        padding: 23px 26px;
+        width: 450px;
+        height: 60px;
+        border-radius: 12px;
+        background: #fff;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__input:placeholder-shown + .submit__btn {
+        opacity: 0.8;
+        pointer-events: none;
+    }
+
+    @include abstracts.screen(lg) {
+        &__block {
+            &::after {
+                right: 25px;
+            }
+        }
+    }
+
+    @include abstracts.screen(lg) {
+        &__block {
+            &::after {
+                bottom: 20px;
+            }
+        }
+    }
+}

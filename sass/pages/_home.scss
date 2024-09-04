@@ -913,3 +913,362 @@
         }
     }
 }
+// rating
+.rating {
+    margin-top: 300px;
+
+    &__row {
+        gap: 165px;
+        align-items: start;
+        flex-wrap: nowrap;
+    }
+
+    &__img {
+        margin-left: 47px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            background-color: #fff5f4;
+            background-image: linear-gradient(11deg, #fff5f4 41%, #ffffff 76%);
+
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        &::after {
+            content: url("../../assets/img/home/shapes-blue.png");
+            position: absolute;
+            top: -125px;
+            left: -43px;
+            z-index: -1;
+        }
+    }
+
+    &__img-person {
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    &__title {
+        margin-top: 5px;
+        color: #2d3134;
+        font-family: var(--font-popins);
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 1.25;
+    }
+
+    &__desc {
+        margin-top: 22px;
+        width: 516px;
+        color: #676a6c;
+        font-family: var(--font-popins);
+        font-size: 1.8rem;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 1.56;
+    }
+
+    &__info {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    &__sub-title {
+        color: #000;
+        font-family: var(--font-popins);
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: -0.14px;
+    }
+
+    &__sub-desc {
+        margin-top: 2px;
+        color: #747474;
+        font-family: var(--font-popins);
+        font-size: 1.2rem;
+        line-height: 1;
+        letter-spacing: -0.12px;
+    }
+
+    &__group {
+        margin-top: 14px;
+    }
+
+    @include abstracts.screen(xl) {
+        &__row {
+            gap: 30px;
+            justify-content: space-between;
+        }
+
+        &__img {
+            margin-left: 0;
+        }
+    }
+
+    @include abstracts.screen(lg) {
+        margin-top: 157px;
+        &__row {
+            flex-direction: column;
+            align-items: center;
+            gap: 56px;
+        }
+    }
+
+    @include abstracts.screen(md) {
+        &__title {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 1.34;
+        }
+
+        &__desc {
+            margin-top: 12px;
+            width: 100%;
+            font-size: 1.4rem;
+            line-height: 1.43;
+        }
+
+        &__info {
+            margin-top: 30px;
+        }
+
+        &__img {
+            &::before {
+                width: 200px;
+                height: 200px;
+            }
+
+            &::after {
+                content: url("../../assets/icon/Shapes-blue-small.svg");
+                top: -70px;
+                left: -10px;
+            }
+        }
+
+        &__img-person {
+            width: 202px;
+            height: 217px;
+        }
+    }
+}
+//review
+.review {
+    margin-top: 193px;
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__desc {
+        margin-top: 16px;
+        width: 733px;
+        text-align: center;
+    }
+
+    &__underline {
+        margin-top: 30px;
+    }
+
+    &__row {
+        margin-top: 60px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+    }
+
+    &__img {
+        display: inline-block;
+        width: 220px;
+        height: 219px;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    &__img-lagre {
+        width: 542px;
+        height: 510px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content-lagre {
+        margin-top: 42px;
+    }
+
+    &__sub-title {
+        width: 253px;
+        color: #2d3134;
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 1.46;
+    }
+
+    &__sub-title-lagre {
+        font-size: 2.6rem;
+        width: 359px;
+    }
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__sub-desc {
+        margin-top: 12px;
+        width: 225px;
+        color: #676a6c;
+        line-height: 1.63;
+    }
+
+    &__sub-desc--large {
+        margin-top: 14px;
+        width: 412px;
+        font-size: 1.8rem;
+    }
+
+    &__card {
+        display: flex;
+        gap: 36px;
+    }
+
+    &__day {
+        margin-top: 51px;
+        color: #676a6c;
+        font-size: 1.4rem;
+    }
+
+    &__day-lagre {
+        margin-top: 0 !important;
+    }
+
+    @include abstracts.screen(xl) {
+        margin-top: 120px;
+        &__card-lagre {
+            width: 457px;
+        }
+
+        &__img-lagre {
+            width: 427px;
+        }
+
+        &__card {
+            gap: 20px;
+        }
+
+        &__sub-title,
+        &__sub-desc {
+            width: 100%;
+        }
+
+        &__day {
+            margin-top: auto;
+        }
+
+        &__sub-title-lagre {
+            width: 75%;
+        }
+    }
+
+    @include abstracts.screen(lg) {
+        margin-top: 60px;
+        &__row {
+            flex-direction: column;
+        }
+
+        &__card-lagre,
+        &__img-lagre {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        &__list {
+            margin-top: 24px;
+        }
+
+        &__desc {
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 3.8rem;
+            text-align: center;
+        }
+    }
+
+    @include abstracts.screen(sm) {
+        &__title {
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 1.34;
+        }
+
+        &__desc {
+            margin-top: 10px;
+            font-size: 1.4rem;
+            line-height: 1.43;
+        }
+
+        &__underline {
+            margin-top: 16px;
+        }
+
+        &__row {
+            margin-top: 40px;
+        }
+
+        &__content-lagre {
+            margin-top: 16px;
+        }
+
+        &__sub-title {
+            width: 100%;
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        &__sub-desc {
+            margin-top: 10px;
+            font-size: 1.4rem;
+            line-height: 1.43;
+        }
+
+        &__day {
+            margin-top: 16px !important;
+        }
+
+        &__img {
+            width: 110px;
+            height: 110px;
+        }
+
+        &__card {
+            gap: 14px;
+        }
+
+        &__list {
+            gap: 24px;
+        }
+    }
+}

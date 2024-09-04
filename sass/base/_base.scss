@@ -13,7 +13,7 @@ body {
     font-size: 1.6rem;
     margin: 0;
     padding: 0;
-    height: 99999999px;
+    // height: 99999999px;
 }
 a {
     color: inherit;
@@ -74,7 +74,7 @@ button {
 }
 
 .container {
-    // width: 1199px;
+    width: 1199px;
 }
 
 .separate {
@@ -84,7 +84,7 @@ button {
     background: rgba(210, 208, 192, 0.21);
 }
 
-h2 {
+.h2 {
     color: #2d3134;
     font-family: var(--font-popins);
     font-size: 4rem;
