@@ -1,0 +1,84 @@
+@use "../abstracts";
+.destination {
+    &__heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: calc(100vh - 80px);
+    }
+
+    &__title {
+        color: #ff7b29;
+        font-family: var(--font-popins);
+        font-size: 13.6rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+    &__desc {
+        margin-top: 6px;
+        color: #fff;
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 1.34;
+    }
+
+    @include abstracts.screen(xl) {
+        &__title {
+            font-size: 10rem;
+        }
+    }
+
+    @include abstracts.screen(md) {
+        &__title {
+            font-size: 7rem;
+        }
+
+        &__desc {
+            font-size: 2rem;
+        }
+    }
+
+    @include abstracts.screen(sm) {
+        &__title {
+            font-size: 4rem;
+        }
+
+        &__desc {
+            font-size: 1.6rem;
+        }
+    }
+    //blog
+    &-block {
+        margin-top: 140px;
+        &__row {
+            row-gap: 40px;
+        }
+
+        &__img {
+            width: 270px;
+            height: 180px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        &__title {
+            margin-top: 20px;
+        }
+
+        @include abstracts.screen(lg) {
+            margin-top: 100px;
+            &__img {
+                width: 100%;
+            }
+        }
+
+        @include abstracts.screen(sm) {
+            margin-top: 60px;
+            &__row {
+                gap: 20px;
+            }
+        }
+    }
+}

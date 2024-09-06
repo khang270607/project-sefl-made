@@ -1,0 +1,38 @@
+@use "../abstracts";
+.hero {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: calc(100vh - 80px);
+
+    &__img {
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__heading {
+        text-align: center;
+    }
+
+    @include abstracts.screen(lg) {
+        &__heading {
+            font-size: 4.9rem;
+        }
+    }
+
+    @include abstracts.screen(md) {
+        &__heading {
+            font-size: 4rem;
+        }
+    }
+
+    @include abstracts.screen(sm) {
+        &__img {
+            width: 190px;
+            height: 192px;
+        }
+    }
+}

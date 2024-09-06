@@ -1,0 +1,31 @@
+.error {
+    position: relative;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--font-popins);
+
+    height: calc(100vh - 80px);
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        translate: 0 -50%;
+    }
+
+    &__desc {
+        color: #676a6c;
+        font-size: 6.2rem;
+        font-weight: 500;
+        line-height: 1.12;
+    }
+
+    &__title {
+        margin-top: 19px;
+        font-size: 6.2rem;
+        font-weight: 600;
+        line-height: 1.12;
+    }
+}

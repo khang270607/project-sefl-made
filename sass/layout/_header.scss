@@ -12,11 +12,18 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        height: 100vh !important;
+    }
+
+    &__destination {
+        background-image: url("../../assets/img/destination/header.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
 
     @include abstracts.screen(lg) {
-        & {
+        &__home,
+        &__page {
             height: auto;
         }
     }
@@ -72,7 +79,7 @@
     }
 
     &__btn {
-        background: #31c3e0;
+        background: #31c3e0 !important;
     }
 
     @include abstracts.screen(xl) {
