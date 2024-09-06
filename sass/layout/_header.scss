@@ -23,7 +23,8 @@
 
     @include abstracts.screen(lg) {
         &__home,
-        &__page {
+        &__page,
+        &__comming-soon {
             height: auto;
         }
     }
