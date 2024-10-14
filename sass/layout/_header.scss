@@ -21,11 +21,19 @@
         background-position: center center;
     }
 
+    &__page {
+        height: auto;
+        padding-bottom: 100px;
+    }
+
     @include abstracts.screen(lg) {
         &__home,
-        &__page,
         &__comming-soon {
             height: auto;
+        }
+
+        &__page {
+            padding-bottom: 0;
         }
     }
 }

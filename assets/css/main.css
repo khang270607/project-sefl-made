@@ -1454,9 +1454,16 @@ button:hover {
   background-repeat: no-repeat;
   background-position: center center;
 }
+.header__page {
+  height: auto;
+  padding-bottom: 100px;
+}
 @media (max-width: 991.98px) {
-  .header__home, .header__page, .header__comming-soon {
+  .header__home, .header__comming-soon {
     height: auto;
+  }
+  .header__page {
+    padding-bottom: 0;
   }
 }
 
@@ -1729,6 +1736,9 @@ button:hover {
   border-radius: 8px;
   background: #132742;
   box-shadow: 0px 25px 25px -20px rgba(0, 0, 0, 0.2);
+}
+.filter__page {
+  margin-top: 10px;
 }
 @media (max-width: 991.98px) {
   .filter {
